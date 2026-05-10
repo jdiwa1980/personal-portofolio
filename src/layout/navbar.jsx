@@ -36,7 +36,7 @@ export const Navbar = () => {
                             <a 
                                href={link.href} 
                                key={index}
-                               className="px-2 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface"
+                               className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface"
                                >
                             {link.label}
                             </a>
@@ -44,7 +44,10 @@ export const Navbar = () => {
                     </div>
                 </div>
                 {/* CTA button (call to action) */}
-                <div className="hidden md:block"><Button size="sm">Contact Me</Button></div>
+                <div className="hidden md:block"><Button size="sm">
+                                                         <a href="#contact">Contact Me</a>                                                               
+                                                </Button>
+                </div>
                 {/* Mobile Menu Button  */}
                 <button className="md:hidden p-2 text-foreground cursor-pointer"
                         onClick={() => setIsMobileMenuOpen((prev) => !prev)} 
@@ -67,7 +70,7 @@ export const Navbar = () => {
                             {link.label}
                             </a>
                     ))}
-                    <Button>Contact Me</Button>
+                    <Button><a href="#contact">Contact Me</a></Button>
                 </div>
             </div>
             )}

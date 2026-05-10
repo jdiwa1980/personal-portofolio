@@ -7,9 +7,9 @@ import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 const socials = [
-                    {icon: FaGithub, href: "#"},
-                    {icon: FaLinkedin, href: "#"},
-                    {icon: FaFacebook, href: "#"}
+                    {icon: FaGithub, href: "https://github.com/jdiwa1980"},
+                    {icon: FaLinkedin, href: "https://www.linkedin.com/in/neil-jeffrey-diwa-502a85134/"},
+                    {icon: FaFacebook, href: "https://www.facebook.com/jeff.diwa.2024/"}
                 ]
 
 const skills =[
@@ -50,6 +50,7 @@ export const Hero = () => {
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(30)].map((_, i) => (
           <div
+            key={i}
             className="absolute w-1.5 h-1.5 rounded-full opacity-60"
             style={{
               backgroundColor: "#20B2A6",
