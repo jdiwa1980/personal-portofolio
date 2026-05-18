@@ -128,7 +128,7 @@ export const Hero = () => {
             </div>
           </div>
           {/* Right Column - Profile Image */}
-          <div className="relatice animate-fade-in animation-delay-300">
+          <div className="relative animate-fade-in animation-delay-300">
             {/* Profile Image */}
             <div className="relative max-w-md mx-auto">
               <div
@@ -141,7 +141,7 @@ export const Hero = () => {
                 <img
                   src="/profile_pic.png"
                   alt="Jeff Diwa"
-                  className="w-full aspect-4/5 object-cover rounded-2xl"
+                  className="w-full h-full object-cover"
                 />
 
                 {/* Floating Badge */}
